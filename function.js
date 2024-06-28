@@ -68,3 +68,41 @@ function calculateCartPrice(...arr){
 // console.log(calculateCartPrice(10,2130,343));
 
 
+const user = {
+    usarname : "shiv sharma",
+    coursePrice : 999
+}
+
+// Normal function
+// function handleObjects(getObject){
+//     console.log(getObject.usarname , getObject.coursePrice);  // typed checking properties
+// }
+
+// variable function
+// const handleObjects = function(getObject){
+//     console.log(getObject.usarname , getObject.coursePrice);
+// }
+
+// Arrow Function
+const handleObjects = (getObject)=>{
+    console.log(getObject.usarname , getObject.coursePrice);
+}
+// handleObjects(user)
+// handleObjects({usarname : "Raju",coursePrice : 399})  // we can also pass like that
+
+// more examples on Arrow Function
+const addTowNumber = (num1,num2)=>{ return num1+num2} // or
+// const addTowNumber = (num1,num2)=> num1+num2    // or
+// const addTowNumber = (num1,num2)=> (num1+num2)
+// console.log(addTowNumber(34,56));
+
+// const returObj = ()=> {usarname : "shiv"} ; // it can't work
+const returObj = ()=>({usarname : "shiv"}) ; // wrap it in br\aces
+console.log(returObj());
+
+// Arrays in Function
+const myArr = [100,300,405,234]
+// const handleArray = (getArray)=> {return getArray[0]}  // or
+const handleArray = (getArray)=> getArray[0]
+// console.log(handleArray(myArr));
+
