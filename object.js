@@ -48,3 +48,77 @@ jsUser.show = function(){
     console.log(`Hi i am ${this.name} and i am from ${this.location}`);
 }
 // jsUser.show()
+
+
+const tinder = new Object() ; // object created using singleton
+tinder.name = "vishnu"
+tinder.age = 34 
+tinder.email = "vi@gmail.com"
+
+const obj1 ={
+    1 : "a",
+    2 : "b"
+}
+const obj2 = {3 : "c",4 : "d"}
+// console.log(tinder);
+// console.log(obj1);
+
+// To comine two object
+
+// const obj3 = {obj1,obj2}  // it gives object inside object 
+// console.log(obj3);
+
+// const obj4 = Object.assign({},obj1,obj2) // (targert,sourc1 ,source2 ...)
+// console.log(obj4);
+
+// const obj5 = {...obj1,...obj2} // Mostely used method to combine two objects
+// console.log(obj5);
+
+// Array of objects
+// const users = [
+//     {id : 101 , name : "shiv"},
+//     {id : 102 , name : "kamal"},
+//     {id : 103 , name : "sharad"}
+// ]
+// console.log(users[0].id);
+// console.log(users[1].name);
+
+const insta = {
+    username : "vishnu sharma",
+    password : "karan345",
+    likes : 2993
+}
+// console.log(Object.keys(insta));  // it returns array of keys 
+// console.log(Object.values(insta)); // it returns array of values 
+// console.log(Object.entries(insta)); // it returns nasted array of keys,values
+
+// console.log(insta.hasOwnProperty("likes"));  // true -> it tells key,value is parsent or not in object
+
+// destraction
+// const {username} = insta ; // we can acces username not required insta.username(every time)
+// console.log(username);
+// const {username : name} = insta // we can give a short name also
+// console.log(name);  // it is also equal to insta.username
+
+// Json -> it is a file which is returns a response in the form of object or array(array objects)
+ // json formatt data 
+// {
+//     "name" : "shiv",
+//     "city" : "pune",
+//     "temp" : "34",
+//     [
+//        "subject1" {
+//         "name" : "hindi",
+//         "marks" : "87"
+//        },
+//        "subject2" : {
+//         "name" : "English",
+//         "marks" : "79" 
+//        },
+//        "subject1" : {
+//         "name" : "java",
+//         "marks" : "96"
+//        },
+//     ]
+// }
+
