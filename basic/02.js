@@ -1,8 +1,16 @@
 // variables
 const a = 123 ;
-let b = 23 ;
-var c = 45 ;
-d=56 ;
+let b = "vi" ;
+var c = true ;
+// let d;
+let e = null  // null type is object 
+// console.table([a,b,c,e]);
+
+// console.log(typeof a);  //number
+// console.log(typeof b);  //string
+// console.log(typeof c);  //boolean
+// console.log(typeof d);  // undefined
+// console.log(typeof e);  //object
 
 // To find data type of variable
 // console.log(typeof a)
@@ -33,7 +41,7 @@ let value ;
  let bool = true 
  let unde; 
  let temp = null 
-//  console.log(typeof temp);
+//  console.log(typeof temp);  // object
  let id = Symbol(123)
 //  console.log(id);
 //  console.log(typeof id);
@@ -47,7 +55,7 @@ let value ;
 
  let undef = undefined 
  let value2= Number(undef) 
-//  console.log(value2);
+//  console.log(value2);  // NaN
 
 // 1 -> true , 0 -> false 
 let str = ""
@@ -58,3 +66,28 @@ let str2 = "Ram"
 let newStr2 = Number(str2)  // it gives NaN-not a number
 // console.log(newStr2);
 
+// increment , decrement
+// let aa = 10
+// let bb = ++aa 
+// let cc = bb++ 
+// //console.table([aa,bb,cc]);
+
+// let a1 = 21 
+// let b1 =--a1 // a1-20 ,b1-20
+// let c1 = a1--  // c1-20 a1-19
+// console.table([a1,b1,c1]);
+
+let a3 = 5
+let a4 = a3 
+a4 = 10 
+// console.log(a3,a4); // a3 still has 5 becsuse of stack memory(copy of value)
+
+let user = {
+    name : "karan",
+    price : 999
+}
+let user2 = user 
+user2.name = "Arjun"  // it changes name in both object because it pass by reference(Heap memory)
+
+// console.log(user);
+// console.log(user2);

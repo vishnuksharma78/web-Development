@@ -23,7 +23,7 @@ user2.email = "github@gmail.com"  // it changes email in user1 and 2 because it 
 
 const name = "vishnu"
 const repo = 20 
-// console.log(`Hello my name is ${name} and i have ${repo}`);
+// console.log(`Hello my name is ${name} and i have ${repo}`);  // Backtic literals
 
 const game = new String("  shiv sha ram   ")
 // console.log(game.charAt(2));
