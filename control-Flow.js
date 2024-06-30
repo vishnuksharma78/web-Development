@@ -100,3 +100,11 @@ let val1 ;
 // val1 = undefined ?? null ?? 20  // val1 have 20
 // val1 = null ?? undefined ?? 20  // val1 have 20
 // console.log(val1);
+
+// Ternary Operator 
+// Condition ? true : false 
+
+const icePrice = 100 
+// icePrice <= 80 ? console.log("less than price ") : console.log("greater than prrice");
+
+
