@@ -66,6 +66,7 @@
 // }while(score<=10)
 
 // Array specific loops
+
 //  for of loop
 
 // const arr = [1,3,5,7,8,9]
@@ -81,25 +82,33 @@ const greetings = "Hello World"
 
 
 // Maps ->Stores unique values and insertion order preserved 
-// maps are not itratable
-const map = new Map()
-map.set('IN',"INDIA")
-map.set('USA',"Unite")
-map.set('FR',"FRANCE")
-map.set('IN',"INDIA") // did not add Beacuse map stores unique
+// maps are not direct itratable
+// const map = new Map()
+// map.set('IN',"INDIA")
+// map.set('USA',"Unite")
+// map.set('FR',"FRANCE")
+// map.set('IN',"INDIA") // did not add Beacuse map stores unique
 // console.log(map);
 
+// let map = new Map()
+
 // loop on map
+
+// map.set('a',1)
+// map.set('b',2)
+// map.set('c',3)
 // for (const [key,value] of map) {
-//     console.log(key , ':',value);
+//     console.log(key,value);
 // }
+
 
 // For in loop
 
 const myObj = {
     js : "JavaScript",
     Cpp : "c++",
-    rb : "swift by apple"
+    rb : "ruby",
+    swift : "swift by apple"
 }
 
 // for (const key in myObj) {
@@ -132,7 +141,7 @@ const arr =["java","c","c++","python","Ruby"]
 // }
 // arr.forEach((printMe))
 
-// arr.forEach((item ,index,arr)=>{
+// arr.forEach((item,index,arr)=>{
 //     console.log(item,index,arr);
 // })
 
@@ -142,6 +151,7 @@ const myCoding = [
     {langName : "python", langFileName : "py"},
 ]
 
-myCoding.forEach((item)=>{
-    console.log(item.langName);
-})
+// myCoding.forEach((item)=>{
+//     console.log(item.langName);
+// })
+
