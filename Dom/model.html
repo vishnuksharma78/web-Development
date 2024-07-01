@@ -11,10 +11,46 @@
     </style>
 </head>
 <body class="bg-black">
-    <div >
-        <h1 id="title" class="heading">Dom learning on getcodr <span style="display: none;">test text</span></h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+   <div class="parent">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thrusday</div>
+   </div>
     
-</body>
+</body> 
+<script>
+let parent = document.querySelector('.parent')
+// console.log(parent);
+// console.log(parent.children);
+// console.log(parent.children[0].innerHTML);
+
+// for (let i = 0; i < parent.children.length; i++) {
+//     console.log(parent.children[i].innerHTML);
+// }
+
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+
+let dayOne = document.querySelector('.day')
+// console.log(dayOne);
+// console.log(dayOne.parentElement);
+// console.log(dayOne.nextElementSibling);
+// console.log("NODES ",parent.childNodes);
+
+// create a element
+
+// let div = document.createElement('div')
+// div.className = "main"
+// div.id = Math.round(Math.random()*10 + 1)
+// div.setAttribute('title',"getcodr")
+// div.style.backgroundColor = "green"
+// let addText = document.createTextNode("youtube")
+// div.appendChild(addText)
+// let body = document.querySelector('body')
+// body.appendChild(div)
+// console.log(div);
+
+
+</script>
 </html>
