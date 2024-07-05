@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "heading">getcodr </h1> 
+    <button id="stop">Button</button>
+</body>
+<script>
+    // javascript is synchoronous and single threaded
+// Exection context
+// Execute one line at a time (singla thread)
+
+// Blocking code(Block the flow of program)->Read file sync    Non-Blocking code(does not block the program)->Read file Async
+
+const h1 = document.querySelector('#heading')
+const btn = document.querySelector('#stop')
+
+// SetTimeOut
+
+// setTimeout(()=>{
+//     console.log("jai shree Ram one time")
+// },2000)
+
+// const printName = function(){
+//     console.log("vishnu ");
+// }
+// setTimeout(printName,2000)
+
+// const changeText = function(){
+//   h1.innerHTML ='Best Js Series'
+// }
+// let changeMe = setTimeout(changeText,2000)
+
+// btn.addEventListener('click',()=>{
+//     clearTimeout(changeMe)  // to clear setTimeOut
+// })
+
+// SetInterval 
+
+// const intervalId = setInterval(()=>{
+//     console.log("Radhe Radhe in 2 s")
+//     console.log(Date.now());
+// },2000)
+
+const runMe = function(){
+    console.log("Radhe Radhe ");
+}
+
+// btn.addEventListener('click',()=>{
+//     clearTimeout(changeMe)  // to clear setTimeOut
+// })
+
+const intervalId = setInterval(runMe,3000)
+
+
+</script>
+</html>
