@@ -19,11 +19,21 @@
 const h1 = document.querySelector('#heading')
 const btn = document.querySelector('#stop')
 
+
 // SetTimeOut
 
 // setTimeout(()=>{
 //     console.log("jai shree Ram one time")
 // },2000)
+
+
+// const stop = setTimeout(() => {
+//     h1.innerHTML = "JS Best Series"
+// }, 2000);
+
+// btn.addEventListener('click',()=>{
+// clearTimeout(stop)
+// })
 
 // const printName = function(){
 //     console.log("vishnu ");
@@ -50,11 +60,21 @@ const runMe = function(){
     console.log("Radhe Radhe ");
 }
 
+const showDate = (str)=>{
+    console.log(Date.now(),str);
+}
+let clrInterval = setInterval(showDate,2000,"Ram");
+
+setTimeout(() => {
+    clearInterval(clrInterval)
+}, 4000);
+
+
 // btn.addEventListener('click',()=>{
 //     clearTimeout(changeMe)  // to clear setTimeOut
 // })
 
-const intervalId = setInterval(runMe,3000)
+// const intervalId = setInterval(runMe,3000)
 
 
 </script>

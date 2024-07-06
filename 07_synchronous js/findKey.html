@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(109, 109, 109);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .insert{
+            width: 400px;
+            height: 200px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 35%;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- <h1>Hello Coders</h1> -->
+    <div class="insert">
+        <!-- <div class="key"> -->
+            Press Any Key And See Magic
+        <!-- </div> -->
+    </div>
+</body>
+<script>
+    let insert = document.querySelector('.insert')
+    window.addEventListener('keypress',(e)=>{
+        insert.innerHTML = `
+<table style = 'boder:"1px solid black"'>
+  <tr>
+    <th>key</th>
+    <th>keyCode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${e.key === ' '? 'space' : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+        `
+    })
+
+</script>
+</html>
