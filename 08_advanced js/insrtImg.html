@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Insert img </title>
+</head>
+<body>
+
+
+<script>
+        let body = document.querySelector('body')
+        let div = document.createElement('div')
+        let btn = document.createElement('button')
+        let h2 = document.createElement('h2')
+        btn.innerHTML = "Button"
+        div.style.width = "460px"
+        div.style.height = "460px"
+        div.style.backgroundColor = "white"
+        div.style.border = "1px solid black"
+        div.style.margin = "30px"
+        btn.style.marginLeft = "100px"
+        btn.style.padding = "5px 20px 5px 20px"
+        h2.style.marginLeft = "20px"
+        h2.style.paddingLeft = "40px"
+        body.append(div)
+        body.append(h2)
+        body.append(btn)
+        
+        const requestUrl = "https://api.github.com/users/hiteshchoudhary"
+         const xhr = new XMLHttpRequest();
+         xhr.open('GET',requestUrl)
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState === 4){
+                const data = JSON.parse(this.responseText)
+                btn.addEventListener('click',()=>{
+                    div.innerHTML = `<img src ="${data.avatar_url}">`
+                    h2.innerHTML= `Followers : ${data.followers}`
+                })
+            }
+        }
+
+         xhr.send()
+            
+</script>
+</body>
+</html>
